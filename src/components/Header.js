@@ -7,6 +7,7 @@ import {
 } from "@mui/icons-material";
 
 import HeaderImg from "../assets/header-img.png";
+import Profile from "../assets/profile.jpg";
 
 const Header = () => {
   return (
@@ -28,7 +29,7 @@ const Header = () => {
 
         <div className="profileContainer">
           <div className="imgBox">
-            <img src="" alt="" />
+            <img src={Profile} alt="profile-img" className="profilePic" />
           </div>
 
           <h2 className="userName">John Doe</h2>
