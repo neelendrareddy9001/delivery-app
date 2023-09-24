@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import BannerName from "./components/BannerName";
 
 import DeliveryAppp from "../src/assets/delivery-app.png";
+import SubMenuContainer from "./SubMenuContainer";
 function App() {
   useEffect(() => {
     const menuLi = document.querySelectorAll("#menu #menu-li");
@@ -41,6 +42,14 @@ function App() {
               <img src={DeliveryAppp} alt="" className="deliveryPic" />
             </div>
           </div>
+
+          {/* dishContainer */}
+          <div className="dishContainer">
+            <SubMenuContainer name={"Menu Category"} />
+          </div>
+          <div className="rowContainer"></div>
+          <div className="dishitemContainer"></div>
+
           <div className="rightMenu"></div>
         </main>
 
@@ -49,7 +58,7 @@ function App() {
           <ul id="menu">
             {/* prettier ignore */}
             <li id="menu-li">
-              <MenuContainer link={"#"} icon={<HomeRounded />} />
+              <MenuContainer link={"#"} icon={<HomeRounded />} isHome />
             </li>
 
             {/* prettier ignore */}
