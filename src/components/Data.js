@@ -10,37 +10,37 @@ const MenuItems = [
     id: 1,
     itemId: "buger01",
     name: "Burger",
-    imgSrc: { Burger },
+    imgSrc: Burger,
   },
   {
     id: 2,
     itemId: "pizza01",
     name: "Pizza",
-    imgSrc: { Drink },
+    imgSrc: Drink,
   },
   {
     id: 3,
     itemId: "hotdog01",
     name: "Hotdog",
-    imgSrc: { Hdog },
+    imgSrc: Hdog,
   },
   {
     id: 4,
     itemId: "taco01",
     name: "Pizza",
-    imgSrc: { Pizza },
+    imgSrc: Pizza,
   },
   {
     id: 5,
     itemId: "snack01",
     name: "Snack",
-    imgSrc: { Snack },
+    imgSrc: Snack,
   },
   {
     id: 6,
     itemId: "drink01",
     name: "Drink",
-    imgSrc: { Taco },
+    imgSrc: Taco,
   },
 ];
 
