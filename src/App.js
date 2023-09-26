@@ -2,7 +2,6 @@ import {
   AccountBalanceRounded,
   Chat,
   Favorite,
-  FunctionsSharp,
   HomeRounded,
   Settings,
   SummarizeRounded,
@@ -15,6 +14,8 @@ import BannerName from "./components/BannerName";
 
 import DeliveryAppp from "../src/assets/delivery-app.png";
 import SubMenuContainer from "./SubMenuContainer";
+import MenuCard from "./components/MenuCard";
+import { MenuItems } from "./components/Data";
 function App() {
   useEffect(() => {
     const menuLi = document.querySelectorAll("#menu #menu-li");
@@ -45,7 +46,22 @@ function App() {
 
           {/* dishContainer */}
           <div className="dishContainer">
-            <SubMenuContainer name={"Menu Category"} />
+            <div className="menuCard">
+              <SubMenuContainer name={"Menu Category"} />
+            </div>
+            <div className="rowContainer">
+              {MenuItems &&
+                MenuItems.map((data) => (
+                  <div key={data.id}>
+                    <MenuCard
+                      imgSrc={data.imgSrc}
+                      name={data.name}
+                      isActive={data.id === 1 ? true : false}
+                    />
+                  </div>
+                ))}
+            </div>
+            <div className="rightMenu"></div>
           </div>
           <div className="rowContainer"></div>
           <div className="dishitemContainer"></div>
